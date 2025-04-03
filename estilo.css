@@ -1,0 +1,323 @@
+/*
+* 
+* @author Lucas Oliveira Costa
+* @version 0.1
+*/
+
+/* ========================= layout ======================== */
+html, body, .capa {
+	height: 100%;
+	overflow: auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background:linear-gradient(50deg,#BDC3C7,#FFF);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+}
+
+/* -- Barra de navegação -- */
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('imagens/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
+}
+
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: #2C3E50;
+	border: none;
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+	color: #2C3E50;
+	background: none;
+}
+
+/* -- Imagem de capa -- */
+.capa {
+	display: table;
+	width: 100%;
+}
+
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.capa-texto h2{
+
+color: #9B59B6;
+margin-bottom:0;
+
+}
+
+.capa-texto h1{
+
+color: #2C3E50;
+margin-bottom: 0;
+
+}
+
+.capa-texto h3{
+
+color: #333;
+margin-bottom:50px;
+
+}
+
+/* -- Botoes -- */
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo {
+	background: #9B59B6;
+}
+.btn-roxo:hover {
+	background-color: #6207e3;
+	color: white;
+}
+
+.btn-branco {
+	border: 2px solid 2C3E50;
+	background: #2C3E50;
+}
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
+/* -- secao servico -- */
+#servicos {
+	background: white;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+.albuns{
+	padding: 10px 0px 10px 0px;
+}
+
+/* -- recursos -- */
+#recursos {
+	padding-top: 60px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.rotacionar{
+	transform: rotate(30deg);
+	-ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    padding-left: 80px;
+}
+
+/* -- rodape -- */
+footer {
+	background: #2C3E50;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.item-rede-social{
+	float: right;
+}
+
+/* ========================= Tipografia ======================== */
+h1 {
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
+
+/* Media queries */
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+	h1 {
+	    font-size: 50px; 
+  	}
+  	.btn-custom {
+    	margin: 10px 15px;
+	}
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    h1 {
+	    font-size: 50px; 
+  	}
+
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    h1 {
+	    font-size: 60px; 
+  	}
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    h1 {
+	    font-size: 80px; 
+  	}
+}
+/* Fim Media queries */
+
+
+h2{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+#rodape h4 {
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#servicos h2, #servicos h3 {
+	color: #9B59B6;
+}
+
+#recursos h3 {
+	color: #2C3E50;
+}
+
+#recursos p, #recursos h2 {
+	color: #595959
+
+}
+
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    border: 6px solid #2C3E50;
+}
+
+#habilidades {
+  margin: 30px;
+  font-family: Arial, sans-serif;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  }
+
+.habilidade {
+  margin-bottom: 20px;
+}
+
+.barra {
+  background-color: #ddd;
+  border-radius: 25px;
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+  margin-top: 5px;
+  border: 1px solid #595959;
+}
+
+.nivel {
+  height: 100%;
+  border-radius: 25px;
+  transition: width 1s ease-in-out;
+}
+
+.nivel {
+  background-color: #9B59B6; 
+}
+
+#habilidades h3 {
+	color: #2C3E50;
+}
+
+#habilidades p, #habilidades h2 {
+	color: #2C3E50
+
+}
+
+#portifolio h2, #portifolio h3 {
+	color: #9B59B6; /*E67E22 */
+}
+
+#portifolio {
+	background: white;
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+#portifolio a {
+    font-size: 30px;
+    text-align: center;
+    color: #9B59B6;
+    font-weight: 600;
+}
+
+#portifolio img {
+    margin-bottom:20px;
+}
+
+#recursos img {
+
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+
+}
+
+#recursos .row{
+
+  margin-bottom:30px;
+
+}
+
+.capa-img img{
+
+    border: 6px solid #9B59B6;
+    border-radius: 100%;
+    width: 322px;
+    float: right;
+}
+
+#servicos img{
+    max-height: 595px;
+    width: 100%;
+    margin-top:8%;
+}
