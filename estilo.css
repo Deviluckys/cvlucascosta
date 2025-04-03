@@ -50,7 +50,7 @@ nav.navbar-transparente {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
-	color: #2C3E50;
+	color: #9B59B6;
 	background: none;
 }
 
@@ -102,7 +102,7 @@ margin-bottom:50px;
 	background: #9B59B6;
 }
 .btn-roxo:hover {
-	background-color: #6207e3;
+	background-color: #D40D8C;
 	color: white;
 }
 
@@ -111,8 +111,8 @@ margin-bottom:50px;
 	background: #2C3E50;
 }
 .btn-branco:hover {
-	background-color: white;
-	color: black;
+	background-color: #16A085;
+	color: white;
 }
 
 /* -- secao servico -- */
@@ -316,8 +316,52 @@ h3{
     float: right;
 }
 
+.capa-img{
+    width: 30%;
+    /* position: relative; */
+    float: left;
+}
+
+.capa-texto{
+    width: 65%;
+    position: relative;
+    float: right;
+    text-align: left;
+}
+
 #servicos img{
     max-height: 595px;
     width: 100%;
-    margin-top:8%;
+    margin-top:14%;
+}
+
+@media screen and (max-width: 1200px){
+
+.capa-img{
+    width: 100%;
+    /* position: relative; */
+}
+
+.capa-texto{
+    width: 100%;;
+    position: relative;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+#recursos img {
+
+    display:none;
+
+}
+
+.capa-img img{
+
+    border: 6px solid #9B59B6;
+    border-radius: 100%;
+    width: 322px;
+    float: none;
+}
+
+
 }
