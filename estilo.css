@@ -117,7 +117,7 @@ margin-bottom:50px;
 
 /* -- secao servico -- */
 #servicos {
-	background: white;
+	background: #f3f3f3;
 	padding-top: 60px;
 	padding-bottom: 20px;
 }
@@ -130,7 +130,7 @@ margin-bottom:50px;
 #recursos {
 	padding-top: 60px;
 	padding-bottom: 20px;
-	color: white;
+	color: #f3f3f3;
 }
 
 .rotacionar{
